@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CRUD con Local Storage</title>
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		th, td {
+			padding: 8px;
+			text-align: left;
+			border-bottom: 1px solid #ddd;
+		}
+
+		form {
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+	<h1>CRUD con Local Storage</h1>
+	
+	<form>
+		<label for="nombre">Nombre:</label>
+		<input type="text" id="nombre" name="nombre"><br><br>
+		
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email"><br><br>
+		
+		<label for="telefono">Teléfono:</label>
+		<input type="text" id="telefono" name="telefono"><br><br>
+		
+		<button type="button" onclick="agregar()">Agregar</button>
+		<button type="button" onclick="editar()">Editar</button>
+		<button type="button" onclick="eliminar()">Eliminar</button>
+	</form>
+	
+	<table id="tabla">
+		<thead>
+			<tr>
+				<th>Nombre</th>
+				<th>Email</th>
+				<th>Teléfono</th>
+				<th>Acciones</th>
+			</tr>
+		</thead>
+		<tbody>
+			
+		</tbody>
+	</table>
+	
+	<script src="main.js"></script>
+</body>
+</html>
